@@ -11,7 +11,8 @@ const App = () => {
   const [value, setValue] = useState(0);
 
   const [theme, setTheme] = useState(localStorage.theme);
-  const [darkSide, setDarkSide] = useState(theme === "light" ? true : false);
+  // const [darkSide, setDarkSide] = useState(theme === "light" ? true : false);
+  const darkSide = theme === "light" ? true : false;
 
   const toggleDarkMode = () => {
     setTheme(colorTheme);
